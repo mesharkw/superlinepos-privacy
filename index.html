@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – SuperlinePOS</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #222;
+      background: #f5f6fa;
+    }
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 40px 24px 30px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; letter-spacing: 1px; }
+    header p  { font-size: 0.95rem; opacity: 0.85; margin-top: 6px; }
+    main {
+      max-width: 860px;
+      margin: 36px auto 60px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      padding: 40px 48px;
+    }
+    @media (max-width: 640px) { main { padding: 24px 18px; } }
+    h2 {
+      font-size: 1.15rem;
+      color: #1a237e;
+      margin: 32px 0 10px;
+      border-left: 4px solid #1a237e;
+      padding-left: 12px;
+    }
+    h2:first-of-type { margin-top: 0; }
+    p   { margin-bottom: 12px; }
+    ul  { margin: 8px 0 14px 22px; }
+    li  { margin-bottom: 6px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 20px;
+      font-size: 0.93rem;
+    }
+    th { background: #e8eaf6; color: #1a237e; text-align: left; padding: 10px 12px; }
+    td { padding: 9px 12px; border-bottom: 1px solid #e0e0e0; }
+    tr:last-child td { border-bottom: none; }
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 2px 7px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    a { color: #1a237e; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SuperlinePOS – Privacy Policy</h1>
+  <p>Last updated: May 11, 2025 &nbsp;|&nbsp; Version 1.0</p>
+</header>
+
+<main>
+
+  <!-- 1. Introduction -->
+  <h2>1. Introduction</h2>
+  <p>
+    SuperlinePOS ("the App", "we", "our", or "us") is a Point-of-Sale (POS) business management
+    application designed for retail merchants and their staff. This Privacy Policy explains what
+    information we collect, how we use it, how we protect it, and your rights regarding that information.
+  </p>
+  <p>
+    By installing or using SuperlinePOS you agree to the practices described in this policy. If you
+    do not agree, please uninstall the App and contact your system administrator.
+  </p>
+
+  <!-- 2. Scope -->
+  <h2>2. Who This Policy Applies To</h2>
+  <ul>
+    <li><strong>Business owners / administrators</strong> who deploy the App for their organisation.</li>
+    <li><strong>Cashiers and employees</strong> who use the App during business operations.</li>
+    <li><strong>End customers</strong> whose purchase records may be captured by the business.</li>
+  </ul>
+
+  <!-- 3. Data Collected -->
+  <h2>3. Data We Collect</h2>
+  <p>We collect only the information necessary to deliver POS functionality:</p>
+
+  <table>
+    <thead>
+      <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Account &amp; Staff Data</strong></td>
+        <td>Name, username, phone number, role, PIN, biometric flag</td>
+        <td>Authentication, access control, audit trail</td>
+      </tr>
+      <tr>
+        <td><strong>Sales &amp; Transaction Data</strong></td>
+        <td>Receipt number, items sold, quantities, prices, discounts, tax, totals, timestamp</td>
+        <td>Sales processing, reporting, receipts</td>
+      </tr>
+      <tr>
+        <td><strong>Payment Data</strong></td>
+        <td>Payment method (cash, M-Pesa, bank transfer, credit, cheque), amounts</td>
+        <td>Till reconciliation, financial reporting</td>
+      </tr>
+      <tr>
+        <td><strong>Customer Data</strong></td>
+        <td>Customer name, phone number, outstanding debt/credit balance</td>
+        <td>Credit sales tracking, customer management</td>
+      </tr>
+      <tr>
+        <td><strong>Inventory Data</strong></td>
+        <td>Product names, SKUs, prices, stock levels, inter-branch transfers</td>
+        <td>Stock management, purchase orders</td>
+      </tr>
+      <tr>
+        <td><strong>Device &amp; Session Data</strong></td>
+        <td>Till ID, branch ID, session open/close times, network connectivity status</td>
+        <td>Multi-branch operations, session audit</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    <span class="badge">✓ No Location Data</span>&nbsp;
+    <span class="badge">✓ No Camera Access</span>&nbsp;
+    <span class="badge">✓ No Contacts Access</span>&nbsp;
+    <span class="badge">✓ No Microphone Access</span>
+  </p>
+  <p>The App requests only <strong>Internet</strong> and <strong>Network State</strong> Android permissions.</p>
+
+  <!-- 4. Biometrics -->
+  <h2>4. Biometric Data</h2>
+  <p>
+    The App supports optional biometric authentication (fingerprint / face unlock). Biometric
+    processing is handled entirely by the Android operating system via the
+    <code>local_auth</code> framework. <strong>SuperlinePOS does not store, transmit, or have
+    access to raw biometric data.</strong> Only a boolean flag ("biometric enabled") is stored
+    in the App's local database.
+  </p>
+
+  <!-- 5. How Data Is Stored -->
+  <h2>5. How Data Is Stored</h2>
+  <ul>
+    <li>
+      <strong>On-device local storage:</strong> Transactional and inventory data are stored locally
+      using an encrypted SQLite database (Drift/SQLCipher). Sensitive credentials are stored
+      using <code>flutter_secure_storage</code>, which leverages the Android Keystore.
+    </li>
+    <li>
+      <strong>Remote / cloud storage:</strong> Data is synchronised with your business's back-end
+      server over HTTPS. The security of server-side data is governed by the agreement between
+      your organisation and the server operator.
+    </li>
+    <li>
+      <strong>No third-party analytics or advertising SDKs</strong> are included in the App.
+    </li>
+  </ul>
+
+  <!-- 6. Data Retention -->
+  <h2>6. Data Retention</h2>
+  <p>
+    Transaction and operational data are retained for as long as needed to support your business
+    operations and comply with applicable accounting or tax regulations (typically 5–7 years).
+    User accounts are deleted upon request by an administrator. You may contact us to request
+    deletion of specific data records.
+  </p>
+
+  <!-- 7. Security -->
+  <h2>7. Security Measures</h2>
+  <ul>
+    <li>All network communication uses <strong>HTTPS / TLS encryption</strong>.</li>
+    <li>Sensitive credentials (tokens, PINs) are stored in the <strong>Android Keystore</strong> via <code>flutter_secure_storage</code>.</li>
+    <li>Local database is encrypted with <strong>SQLCipher</strong>.</li>
+    <li>Session management includes forced logout and token expiry controlled by the server.</li>
+    <li>Role-based access control restricts data access to authorised personnel only.</li>
+    <li>Biometric authentication provides an additional layer of device-level security.</li>
+  </ul>
+  <p>
+    While we implement industry-standard safeguards, no method of transmission or storage is 100%
+    secure. We encourage organisations to follow best practices such as strong passwords and
+    regular account audits.
+  </p>
+
+  <!-- 8. Children -->
+  <h2>8. Children's Privacy</h2>
+  <p>
+    SuperlinePOS is a business tool intended for adults (18+). We do not knowingly collect
+    personal data from children under 13. If you believe a child's data has been collected,
+    please contact us immediately.
+  </p>
+
+  <!-- 9. User Rights -->
+  <h2>9. Your Rights</h2>
+  <p>Depending on applicable law, you may have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> personal data we hold about you.</li>
+    <li><strong>Correct</strong> inaccurate data.</li>
+    <li><strong>Delete</strong> your account and associated data.</li>
+    <li><strong>Restrict or object</strong> to certain processing activities.</li>
+    <li><strong>Data portability</strong> – receive your data in a structured, machine-readable format.</li>
+  </ul>
+  <p>To exercise any of these rights, contact your system administrator or reach out to us directly.</p>
+
+  <!-- 10. Changes -->
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time. The updated version will be made available
+    within the App and on the Play Store listing. Your continued use of the App after changes take
+    effect constitutes acceptance of the revised policy.
+  </p>
+
+  <!-- 11. Contact -->
+  <h2>11. Contact Us</h2>
+  <p>If you have questions or concerns about this Privacy Policy, please contact:</p>
+  <ul>
+    <li><strong>App:</strong> SuperlinePOS</li>
+    <li><strong>Email:</strong> <a href="mailto:support@superlinepos.com">support@superlinepos.com</a></li>
+    <li><strong>Website:</strong> <a href="https://www.superlinepos.com" target="_blank" rel="noopener">www.superlinepos.com</a></li>
+  </ul>
+
+  <footer>
+    &copy; 2025 SuperlinePOS. All rights reserved.<br/>
+    This document satisfies Google Play Store data safety and privacy policy requirements.
+  </footer>
+
+</main>
+
+</body>
+</html>
